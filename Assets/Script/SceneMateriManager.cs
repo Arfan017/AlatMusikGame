@@ -1,13 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class MateriManager : MonoBehaviour
+public class SceneMateriManager : MonoBehaviour
 {
     public GameObject panelMateri1;
     public GameObject panelMateri2;
     public GameObject panelMateri3;
+    
     private void Start()
     {
         panelMateri1.SetActive(false);
