@@ -1,24 +1,43 @@
-using System.Collections;
-using System.Collections.Generic;
-using System.Reflection;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-
 public class MateriManager : MonoBehaviour
 {
     public GameObject panelIlmu;
     public Button tombol1;
     public Button tombol2;
+    public Button buttonRight;
+    public Button buttonLeft;
     public Image imageAlat;
     public TextMeshProUGUI tittle;
+    public GameObject parentContent;
     public TextMeshProUGUI content;
     public Scrollbar scrollbar;
     public AlatMusik[] alatMusiks;
+    private AlatMusik alatMusik;
 
-    void Start()
+    public AlatMusik AlatMusik
+    {
+        get
+        {
+            return alatMusik;
+        }
+        set
+        {
+            alatMusik = value;
+        }
+    }
+
+    private void Awake()
     {
         panelIlmu.SetActive(false);
+        content.gameObject.SetActive(false);
+        buttonRight.gameObject.SetActive(false);
+        buttonLeft.gameObject.SetActive(false);
+    }
+
+    private void Start()
+    {
         tombol1.onClick.AddListener(() => TampilkanMateri(0));
         tombol2.onClick.AddListener(() => TampilkanMateri(1));
     }
@@ -27,16 +46,34 @@ public class MateriManager : MonoBehaviour
     {
         if (indeks >= 0 && indeks < alatMusiks.Length)
         {
-            AlatMusik alatMusik = alatMusiks[indeks];
+            AlatMusik = alatMusiks[indeks];
             panelIlmu.SetActive(true);
-            // scrollbar.value = 0f;
-            tittle.text = alatMusik.nama;
-            content.text = alatMusik.materi;
-            imageAlat.sprite = alatMusik.image;
+            buttonRight.gameObject.SetActive(true);
+            tittle.text = AlatMusik.nama;
+            imageAlat.sprite = AlatMusik.image;
+            content.text = AlatMusik.materi;
         }
-        else
-        {
-            Debug.LogWarning("Indeks diluar batas array!");
-        }
+    }
+
+    public void ClickRight()
+    {
+        content.gameObject.SetActive(true);
+        parentContent.SetActive(true);
+        imageAlat.gameObject.SetActive(false);
+        buttonRight.gameObject.SetActive(false);
+        buttonLeft.gameObject.SetActive(true);
+    }
+
+    public void ClickLeft()
+    {
+        imageAlat.gameObject.SetActive(true);
+        parentContent.SetActive(false);
+        buttonRight.gameObject.SetActive(true);
+        buttonLeft.gameObject.SetActive(false);
+    }
+
+    public void Back()
+    {
+        ClickLeft();
     }
 }
