@@ -11,40 +11,81 @@ public class QuizManagar : MonoBehaviour
     public class Question
     {
         public string questionText;
+        public Sprite imageQuestion;
         public List<string> options;
         public int correctOptionIndex;
     }
 
     public List<Question> questions;
     public TextMeshProUGUI questionText;
+    public Image imageQuestion;
     public List<Button> optionButtons;
-    // public Animator animatorPlayer;
-    // public Animator animatorBoss;
-    // public TextMeshProUGUI textNilai;
-    // public AudioSource audioBossFight;
-    // public GameObject loadingPanel;
-    // public Slider SliderLoading;
-    // public float delayBeforeNextQuestion = 2f;
+    public GameObject health0, health1, health2;
+    public GameObject PanelMenang, PanelKalah;
     private int currentQuestionIndex;
+    private int health;
     private bool isAnswered;
+    public int Health
+    {
+        get
+        {
+            return health;
+        }
+        set
+        {
+            health = value;
+        }
+    }
 
     void Start()
     {
+        Health = 3;
+        health0.gameObject.SetActive(true);
+        health1.gameObject.SetActive(true);
+        health2.gameObject.SetActive(true);
+        // health3.gameObject.SetActive(true);
+
         currentQuestionIndex = 0;
         isAnswered = false;
         // ShuffleQuestions();
         ShowQuestion();
-        // audioBossFight.Play();
     }
 
     // void Update()
     // {
+
     // currentQuestionIndex = 0;
     // isAnswered = false;
     // ShuffleQuestions();
-    // ShowQuestion();
+    // ShwQuestion();
     // textNilai.text = "Nilai: " + CalculateScore();
     // }
+
+    void ReduceHealth()
+    {
+        Health -= 1;
+        switch (Health)
+        {
+            case 3:
+                health0.gameObject.SetActive(true);
+                health1.gameObject.SetActive(true);
+                health2.gameObject.SetActive(true);
+                break;
+
+            case 2:
+                health0.gameObject.SetActive(false);
+                break;
+
+            case 1:
+                health1.gameObject.SetActive(false);
+                break;
+
+            case 0:
+                health2.gameObject.SetActive(false);
+                ShowPanelKalah();
+                break;
+        }
+    }
 
     void ShowQuestion()
     {
@@ -52,6 +93,7 @@ public class QuizManagar : MonoBehaviour
         {
             Question currentQuestion = questions[currentQuestionIndex];
             questionText.text = currentQuestion.questionText;
+            imageQuestion.sprite = currentQuestion.imageQuestion;
 
             for (int i = 0; i < optionButtons.Count; i++)
             {
@@ -69,7 +111,10 @@ public class QuizManagar : MonoBehaviour
         }
         else
         {
-            // Debug.Log("Game Selesai! Skor Akhir: " + CalculateScore());
+            if (Health != 0)
+            {
+                ShowPanelMenang();
+            }
             // textNilai.text = "Nilai: " + CalculateScore();
         }
     }
@@ -84,36 +129,24 @@ public class QuizManagar : MonoBehaviour
 
             if (optionIndex == currentQuestion.correctOptionIndex)
             {
-                // animatorPlayer.SetBool("PlayerAttack", true);
                 // textNilai.text = "Nilai: " + CalculateScore();
                 Debug.Log("benar");
             }
 
             else
             {
-                // animatorBoss.SetBool("BossAttack", true);
+                ReduceHealth();
                 Debug.Log("salah");
             }
-            // StartCoroutine()
             NextQuestionWithDelay();
         }
     }
 
     public void NextQuestionWithDelay()
     {
-        // yield return new WaitForSeconds(delayBeforeNextQuestion);
-
         currentQuestionIndex++;
         ShowQuestion();
     }
-
-    // private IEnumerator NextQuestionWithDelay()
-    // {
-    //     yield return new WaitForSeconds(delayBeforeNextQuestion);
-
-    //     currentQuestionIndex++;
-    //     ShowQuestion();
-    // }
 
     public int CalculateScore()
     {
@@ -129,13 +162,26 @@ public class QuizManagar : MonoBehaviour
         return score;
     }
 
-    public void BtnYes()
+    public void ShowPanelMenang()
+    {
+        Time.timeScale = 0;
+        PanelMenang.SetActive(true);
+    }
+
+    public void ShowPanelKalah()
+    {
+        Time.timeScale = 0;
+        PanelKalah.SetActive(true);
+    }
+
+    public void ReplayGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
-    public void BtnNo(int sceneIndex)
+    public void ExitGame(int sceneIndex)
     {
+        SceneManager.LoadSceneAsync(sceneIndex);
         // Destroy(dataParsistenceManager);
         // StartCoroutine(LoadAsynchronously(sceneIndex));
     }

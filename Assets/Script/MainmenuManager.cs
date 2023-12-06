@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class MainmenuManager : MonoBehaviour
+public class MainMenuManager : MonoBehaviour
 {
     public GameObject panelUtama;
     public GameObject panelMainmenu;
