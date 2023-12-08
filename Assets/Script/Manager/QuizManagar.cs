@@ -182,8 +182,6 @@ public class QuizManagar : MonoBehaviour
     public void ExitGame(int sceneIndex)
     {
         SceneManager.LoadSceneAsync(sceneIndex);
-        // Destroy(dataParsistenceManager);
-        // StartCoroutine(LoadAsynchronously(sceneIndex));
     }
 
     // public void StopAudio()
