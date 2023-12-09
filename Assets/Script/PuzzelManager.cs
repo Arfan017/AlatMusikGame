@@ -9,7 +9,8 @@ using UnityEngine.SceneManagement;
 public class PuzzelManager : MonoBehaviour
 {
     public GameObject SelectedPiece;
-    private int RemeaningPlace = 3;
+    public Sprite newPuzzle;
+    private int RemeaningPlace = 1;
     int OIL = 1;
 
     public int RemeaningPlace_
@@ -21,17 +22,15 @@ public class PuzzelManager : MonoBehaviour
         set
         {
             RemeaningPlace = value;
+            if (RemeaningPlace_ == 0)
+            {
+                ShowPanelWin();
+            }
         }
     }
 
     void Update()
     {
-        Debug.Log(RemeaningPlace_);
-        if (RemeaningPlace_ == 0)
-        {
-            ShowPanelWin();
-        }
-
         if (Input.GetMouseButtonDown(0))
         {
             RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
@@ -65,30 +64,66 @@ public class PuzzelManager : MonoBehaviour
         }
     }
 
-    public GameObject StartPanel, PanelMenang;
+    public GameObject StartPanel, PanelMenang, PanelSelesai;
     public void SetPuzzlePhoto(Sprite Photo)
     {
-        if (Photo != null)
+        // string nextPuzzleName = PlayerPrefs.GetString("NextPuzzlePhoto", "");
+        // // Debug.Log(nextPuzzleName);
+
+        // if (!string.IsNullOrEmpty(nextPuzzleName))
+        // {
+        //     Photo = Resources.Load<Sprite>(nextPuzzleName);
+        //     for (int i = 0; i < 36; i++)
+        //     {
+        //         Transform pieceTransform = GameObject.Find("Piece (" + i + ")")?.transform;
+        //         if (pieceTransform != null)
+        //         {
+        //             Transform puzzleTransform = pieceTransform.Find("Puzzle");
+        //             if (puzzleTransform != null)
+        //             {
+        //                 puzzleTransform.GetComponent<SpriteRenderer>().sprite = Photo;
+        //             }
+        //         }
+        //     }
+        //     PlayerPrefs.DeleteKey("NextPuzzlePhoto");
+        // }
+        // else
+        // {
+        // Debug.Log(nextPuzzleName);
+        // Photo != null
+        for (int i = 0; i < 36; i++)
         {
-            for (int i = 0; i < 36; i++)
+            Transform pieceTransform = GameObject.Find("Piece (" + i + ")")?.transform;
+            if (pieceTransform != null)
             {
-                Transform pieceTransform = GameObject.Find("Piece (" + i + ")")?.transform;
-                if (pieceTransform != null)
+                Transform puzzleTransform = pieceTransform.Find("Puzzle");
+                if (puzzleTransform != null)
                 {
-                    Transform puzzleTransform = pieceTransform.Find("Puzzle");
-                    if (puzzleTransform != null)
-                    {
-                        puzzleTransform.GetComponent<SpriteRenderer>().sprite = Photo;
-                    }
+                    puzzleTransform.GetComponent<SpriteRenderer>().sprite = Photo;
                 }
             }
-            StartPanel.SetActive(false);
         }
+        StartPanel.SetActive(false);
+        // }
+    }
+
+    public void NextPuzzle()
+    {
+        SceneManager.LoadSceneAsync(5);
+        // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        // PlayerPrefs.SetString("NextPuzzlePhoto", newPuzzle.name);
     }
 
     public void ShowPanelWin()
     {
-        PanelMenang.SetActive(true);
+        if (SceneManager.GetActiveScene().name == "GameLvl2 1")
+        {
+            PanelMenang.SetActive(true);
+        }
+        else
+        {
+            PanelSelesai.SetActive(true);
+        }
     }
 
     public void ExitGame(int sceneIndex)

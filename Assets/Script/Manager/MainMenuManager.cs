@@ -14,6 +14,8 @@ public class MainMenuManager : MonoBehaviour
     {
         panelMainmenu.SetActive(false);
         panelAbout.SetActive(false);
+
+        PlayerPrefs.DeleteKey("TrueAnswer");
     }
 
     private void Start()
@@ -51,5 +53,4 @@ public class MainMenuManager : MonoBehaviour
         PlayerPrefs.DeleteKey("PanelUtamaTerbuka");
         PlayerPrefs.Save();
     }
-
 }

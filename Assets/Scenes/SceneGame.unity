@@ -167,6 +167,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcb866bd122e7c84e8759e942901edbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GameLv2: {fileID: 799203791}
+  GameLv3: {fileID: 1631010970}
+  lock2: {fileID: 401160450}
+  lock3: {fileID: 1150212734}
 --- !u!1 &401160450
 GameObject:
   m_ObjectHideFlags: 0
@@ -528,7 +532,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 799203792}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 296078269}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: ChangeScene
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 4
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &799203792
 MonoBehaviour:
   m_ObjectHideFlags: 0

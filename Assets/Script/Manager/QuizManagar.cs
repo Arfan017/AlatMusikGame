@@ -25,6 +25,7 @@ public class QuizManagar : MonoBehaviour
     private int currentQuestionIndex;
     private int health;
     private bool isAnswered;
+    private int TrueAnswer;
     public int Health
     {
         get
@@ -40,6 +41,7 @@ public class QuizManagar : MonoBehaviour
     void Start()
     {
         Health = 3;
+        TrueAnswer = 0;
         health0.gameObject.SetActive(true);
         health1.gameObject.SetActive(true);
         health2.gameObject.SetActive(true);
@@ -130,13 +132,12 @@ public class QuizManagar : MonoBehaviour
             if (optionIndex == currentQuestion.correctOptionIndex)
             {
                 // textNilai.text = "Nilai: " + CalculateScore();
-                Debug.Log("benar");
+                TrueAnswer += 1;
             }
 
             else
             {
                 ReduceHealth();
-                Debug.Log("salah");
             }
             NextQuestionWithDelay();
         }
@@ -165,6 +166,7 @@ public class QuizManagar : MonoBehaviour
     public void ShowPanelMenang()
     {
         Time.timeScale = 0;
+        PlayerPrefs.SetInt("TrueAnswer", TrueAnswer);
         PanelMenang.SetActive(true);
     }
 
@@ -181,6 +183,7 @@ public class QuizManagar : MonoBehaviour
 
     public void ExitGame(int sceneIndex)
     {
+        Time.timeScale = 1;
         SceneManager.LoadSceneAsync(sceneIndex);
     }
 

@@ -9,12 +9,6 @@ public class PieceScript : MonoBehaviour
     private Vector3 RightPosition;
     public bool InRightPosition;
     public bool Selected;
-    GameObject DragAndDrop;
-
-    // private void Awake()
-    // {
-    //     DragAndDrop = GameObject.Find();
-    // }
 
     void Start()
     {
