@@ -17,3 +17,7 @@ MonoBehaviour:
     answer: tifa
   - questionImage: {fileID: -1477114072, guid: 0115cbb386e8b4941a64bd479ba05aa2, type: 3}
     answer: fuu
+  - questionImage: {fileID: -1247540801, guid: 0115cbb386e8b4941a64bd479ba05aa2, type: 3}
+    answer: yi
+  - questionImage: {fileID: 1994455600, guid: 0115cbb386e8b4941a64bd479ba05aa2, type: 3}
+    answer: guoto

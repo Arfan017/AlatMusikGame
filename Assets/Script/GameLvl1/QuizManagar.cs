@@ -22,6 +22,7 @@ public class QuizManagar : MonoBehaviour
     public List<Button> optionButtons;
     public GameObject health0, health1, health2;
     public GameObject PanelMenang, PanelKalah;
+    public AudioSource myAudioSource;
     private int currentQuestionIndex;
     private int health;
     private bool isAnswered;
@@ -40,6 +41,7 @@ public class QuizManagar : MonoBehaviour
 
     void Start()
     {
+        myAudioSource.volume = PlayerPrefs.GetFloat("musicVolume");
         Health = 3;
         TrueAnswer = 0;
         health0.gameObject.SetActive(true);
