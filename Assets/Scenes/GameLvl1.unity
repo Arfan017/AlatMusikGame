@@ -661,7 +661,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: gambar di samping adalah alat musik papau, apakah nama alat musik tersebut
+  m_text: gambar di samping adalah alat musik papua, apakah nama alat musik tersebut
     ?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -803,17 +803,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   questions:
-  - questionText: Dari manakah alat musik tifa berasa?
-    imageQuestion: {fileID: 189420996, guid: 0115cbb386e8b4941a64bd479ba05aa2, type: 3}
+  - questionText: Dari manakah alat musik tifa berasal?
+    imageQuestion: {fileID: 21300000, guid: d36f3efb478ea0744b2a669eb7e8aecb, type: 3}
     options:
     - Jawa
     - Bali
     - Papua
     - Sumatra
     correctOptionIndex: 2
-  - questionText: Gambar di samping adalah alat musik papau, apakah nama alat musik
+  - questionText: Gambar di samping adalah alat musik papua, apakah nama alat musik
       tersebut ?
-    imageQuestion: {fileID: 189420996, guid: 0115cbb386e8b4941a64bd479ba05aa2, type: 3}
+    imageQuestion: {fileID: 21300000, guid: d36f3efb478ea0744b2a669eb7e8aecb, type: 3}
     options:
     - tifa
     - gitar
@@ -821,7 +821,7 @@ MonoBehaviour:
     - fuu
     correctOptionIndex: 0
   - questionText: Bagaimanakah cara memainkan alat musik tifa ?
-    imageQuestion: {fileID: 189420996, guid: 0115cbb386e8b4941a64bd479ba05aa2, type: 3}
+    imageQuestion: {fileID: 21300000, guid: d36f3efb478ea0744b2a669eb7e8aecb, type: 3}
     options:
     - Dipetik
     - Dipukul
@@ -829,7 +829,7 @@ MonoBehaviour:
     - Ditekan
     correctOptionIndex: 1
   - questionText: Apa bahan utama pembuatan alat musik fuu?
-    imageQuestion: {fileID: -1477114072, guid: 0115cbb386e8b4941a64bd479ba05aa2, type: 3}
+    imageQuestion: {fileID: 21300000, guid: 71e99f0cbf8b73146bbd2ebebcdcc03b, type: 3}
     options:
     - Logam
     - Plastik
@@ -837,7 +837,7 @@ MonoBehaviour:
     - Bambu dan kayu
     correctOptionIndex: 3
   - questionText: Bagaimana cara memainkan alat musik fuu?
-    imageQuestion: {fileID: -1477114072, guid: 0115cbb386e8b4941a64bd479ba05aa2, type: 3}
+    imageQuestion: {fileID: 21300000, guid: 71e99f0cbf8b73146bbd2ebebcdcc03b, type: 3}
     options:
     - Ditiup
     - Dipukul
@@ -845,7 +845,7 @@ MonoBehaviour:
     - Ditekan
     correctOptionIndex: 0
   - questionText: Apa nama alat musik ini ?
-    imageQuestion: {fileID: -1477114072, guid: 0115cbb386e8b4941a64bd479ba05aa2, type: 3}
+    imageQuestion: {fileID: 21300000, guid: 71e99f0cbf8b73146bbd2ebebcdcc03b, type: 3}
     options:
     - tifa
     - fuu

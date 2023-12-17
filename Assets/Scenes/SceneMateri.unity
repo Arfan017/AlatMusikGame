@@ -158,6 +158,7 @@ RectTransform:
   - {fileID: 1799664119}
   - {fileID: 959961199}
   - {fileID: 688940071}
+  - {fileID: 1554938074}
   - {fileID: 1204930381}
   - {fileID: 854806261}
   - {fileID: 531442402}
@@ -1772,7 +1773,7 @@ MonoBehaviour:
 
       Alat musik kecapi mulut ini berasal dari wilayah lembah Baliem,
       Papua. Dimana wilayah tersebut dihuni oleh mayoritas suku Dani.'
-    image: {fileID: -1876102368, guid: 0115cbb386e8b4941a64bd479ba05aa2, type: 3}
+    image: {fileID: 21300000, guid: 17b274dfc7b08b24e881461a39a86ba9, type: 3}
   - nama: Amyen
     materi: "Amyen merupakan alat musik tradisional Papua berupa alat musik tiup
       yang sejenis dengan terompet dan terbuat dari bahan jenis kayu putih. Alat
@@ -1780,7 +1781,7 @@ MonoBehaviour:
       Papua.\r\n\r\nAlat musik amyen merupakan bakat musik yang digunakan sebagai
       pengiring kesenian tarian dari daerah setempat. Bukan hanya itu, alat musik
       ini juga digunakan sebagai alat komunikasi dalam peperangan.\r"
-    image: {fileID: -979849653, guid: 0115cbb386e8b4941a64bd479ba05aa2, type: 3}
+    image: {fileID: 21300000, guid: 028bbd97859a0f34a8a2bd7e8f764971, type: 3}
 --- !u!114 &474972707
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2067,7 +2068,7 @@ RectTransform:
   - {fileID: 1986037909}
   - {fileID: 1323844093}
   m_Father: {fileID: 19909742}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2715,8 +2716,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 2.55, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -453.35, y: -0.0000088215}
-  m_SizeDelta: {x: 625.6665, y: 1145.1}
+  m_AnchoredPosition: {x: -440, y: -74}
+  m_SizeDelta: {x: 815.2092, y: 1492}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &688940072
 MonoBehaviour:
@@ -2923,7 +2924,7 @@ RectTransform:
   m_Children:
   - {fileID: 1361593320}
   m_Father: {fileID: 19909742}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -180}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3362,7 +3363,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f6d0f992061cdaf4b9cc1da96642d5b4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 675a57d0b7c7b864091d685bb84036b5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3931,7 +3932,7 @@ RectTransform:
   m_Children:
   - {fileID: 1644624697}
   m_Father: {fileID: 19909742}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4802,7 +4803,7 @@ MonoBehaviour:
       dalam berbagai macam ritual dan juga kesenian adat, baik itu pesta adat, perkawinan,
       penyambutan tamu-tamu penting dan juga pengiring tari-tarian dan masih banyak
       lagi yang lainnya.'
-    image: {fileID: 189420996, guid: 0115cbb386e8b4941a64bd479ba05aa2, type: 3}
+    image: {fileID: 21300000, guid: d36f3efb478ea0744b2a669eb7e8aecb, type: 3}
   - nama: Fuu
     materi: "Fuu merupakan alat musik tradisional Papua yang dibuat dengan menggunakan
       bahan bambu dan juga kayu. Alat musik fuu biasanya digunakan sebagai alat berkomunikasi
@@ -4812,7 +4813,7 @@ MonoBehaviour:
       dan juga tabung.\r\n\r\nHal ini dikarenakan fuu mempunyai bentuk yang gempal
       dan juga mempunyai lubang di ujung alat musik ini. Dimana alat musik ini dimainkan
       dengan cara sama seperti memainkan alat musik tifa atau kelambut.\r"
-    image: {fileID: -1477114072, guid: 0115cbb386e8b4941a64bd479ba05aa2, type: 3}
+    image: {fileID: 21300000, guid: 71e99f0cbf8b73146bbd2ebebcdcc03b, type: 3}
 --- !u!1 &1361593319
 GameObject:
   m_ObjectHideFlags: 0
@@ -5301,7 +5302,7 @@ MonoBehaviour:
       alat yang digunakan untuk mengumpulkan para penduduk. Biasanya alat ini alat
       digunakan oleh para ketua adat pada saat akan diadakan upacara adat atau pada
       saat akan menyampaikan pengumuman kepada masyarakat sekitar.'
-    image: {fileID: -1247540801, guid: 0115cbb386e8b4941a64bd479ba05aa2, type: 3}
+    image: {fileID: 21300000, guid: 61b1c4ad403b48e4a8afb3635ae9aff7, type: 3}
   - nama: Guoto
     materi: "Guoto merupakan alat musik yang sangat sederhana dan modern ini keberadaannya
       sulit untuk ditemui. Guoto terbuat dari bilah bambu yang telah dikeringkan.
@@ -5310,7 +5311,7 @@ MonoBehaviour:
       unik. Permainan Guoto biasanya dilakukan dengan instrument musik tradisional
       Papua Barat lainnya untuk menyambut tamu, mengiringin tari, dan juga ritual
       adat setempat.\r"
-    image: {fileID: 1994455600, guid: 0115cbb386e8b4941a64bd479ba05aa2, type: 3}
+    image: {fileID: 21300000, guid: dc8fc7aff94fcab419ff8e0b80dccf5d, type: 3}
 --- !u!114 &1488506963
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5617,6 +5618,83 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1539671938}
+  m_CullTransparentMesh: 1
+--- !u!1 &1554938073
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1554938074}
+  - component: {fileID: 1554938076}
+  - component: {fileID: 1554938075}
+  m_Layer: 5
+  m_Name: Image (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1554938074
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1554938073}
+  m_LocalRotation: {x: 0.02225109, y: 0, z: 0, w: 0.9997524}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.17, y: 0.17, z: 0.17}
+  m_ConstrainProportionsScale: 1
+  m_Children:
+  - {fileID: 1816469731}
+  m_Father: {fileID: 19909742}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 2.55, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -348.17374, y: 100}
+  m_SizeDelta: {x: 830.603, y: 553}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1554938075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1554938073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 9fc07a0d8de8c9e468899898c6294780, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1554938076
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1554938073}
   m_CullTransparentMesh: 1
 --- !u!1 &1555043378
 GameObject:
@@ -6644,6 +6722,141 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1799664118}
+  m_CullTransparentMesh: 1
+--- !u!1 &1816469730
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1816469731}
+  - component: {fileID: 1816469733}
+  - component: {fileID: 1816469732}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1816469731
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1816469730}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -3}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1554938074}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 29.189, y: 48}
+  m_SizeDelta: {x: 656.867, y: 188.452}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1816469732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1816469730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Mari mengenal alat musik papua
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4282006074
+  m_fontColor: {r: 0.2264151, g: 0.2264151, b: 0.2264151, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 83
+  m_fontSizeBase: 83
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1816469733
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1816469730}
   m_CullTransparentMesh: 1
 --- !u!1 &1892773112
 GameObject:

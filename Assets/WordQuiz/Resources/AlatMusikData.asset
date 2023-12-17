@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: AlatMusikData
   m_EditorClassIdentifier: 
   questions:
-  - questionImage: {fileID: 189420996, guid: 0115cbb386e8b4941a64bd479ba05aa2, type: 3}
+  - questionImage: {fileID: 21300000, guid: d36f3efb478ea0744b2a669eb7e8aecb, type: 3}
     answer: tifa
-  - questionImage: {fileID: -1477114072, guid: 0115cbb386e8b4941a64bd479ba05aa2, type: 3}
+  - questionImage: {fileID: 21300000, guid: 71e99f0cbf8b73146bbd2ebebcdcc03b, type: 3}
     answer: fuu
-  - questionImage: {fileID: -1247540801, guid: 0115cbb386e8b4941a64bd479ba05aa2, type: 3}
+  - questionImage: {fileID: 21300000, guid: 61b1c4ad403b48e4a8afb3635ae9aff7, type: 3}
     answer: yi
-  - questionImage: {fileID: 1994455600, guid: 0115cbb386e8b4941a64bd479ba05aa2, type: 3}
+  - questionImage: {fileID: 21300000, guid: dc8fc7aff94fcab419ff8e0b80dccf5d, type: 3}
     answer: guoto
