@@ -26,7 +26,8 @@ public class QuizManagar : MonoBehaviour
     private int currentQuestionIndex;
     private int health;
     private bool isAnswered;
-    private int TrueAnswer;
+    private bool QuizFinish;
+    // private int TrueAnswer;
     public int Health
     {
         get
@@ -43,7 +44,8 @@ public class QuizManagar : MonoBehaviour
     {
         myAudioSource.volume = PlayerPrefs.GetFloat("musicVolume");
         Health = 3;
-        TrueAnswer = 0;
+        // TrueAnswer = 0;
+        QuizFinish = false;
         health0.gameObject.SetActive(true);
         health1.gameObject.SetActive(true);
         health2.gameObject.SetActive(true);
@@ -134,7 +136,7 @@ public class QuizManagar : MonoBehaviour
             if (optionIndex == currentQuestion.correctOptionIndex)
             {
                 // textNilai.text = "Nilai: " + CalculateScore();
-                TrueAnswer += 1;
+                // TrueAnswer += 1;
             }
 
             else
@@ -151,24 +153,25 @@ public class QuizManagar : MonoBehaviour
         ShowQuestion();
     }
 
-    public int CalculateScore()
-    {
-        int score = 0;
+    // public int CalculateScore()
+    // {
+    //     int score = 0;
 
-        foreach (Question question in questions)
-        {
-            if (question.correctOptionIndex == 0)
-            {
-                score++;
-            }
-        }
-        return score;
-    }
+    //     foreach (Question question in questions)
+    //     {
+    //         if (question.correctOptionIndex == 0)
+    //         {
+    //             score++;
+    //         }
+    //     }
+    //     return score;
+    // }
 
     public void ShowPanelMenang()
     {
         Time.timeScale = 0;
-        PlayerPrefs.SetInt("TrueAnswer", TrueAnswer);
+        QuizFinish = true;
+        PlayerPrefs.SetInt("QuizFinish", boolToInt(QuizFinish));
         PanelMenang.SetActive(true);
     }
 
@@ -189,6 +192,14 @@ public class QuizManagar : MonoBehaviour
         SceneManager.LoadSceneAsync(sceneIndex);
     }
 
+    private int boolToInt(bool val)
+    {
+        if (val)
+            return 1;
+        else
+            return 0;
+    }
+    
     // public void StopAudio()
     // {
     //     audioBossFight.Stop();
@@ -227,5 +238,4 @@ public class QuizManagar : MonoBehaviour
 
     //     questions = shuffledQuestions;
     // }
-
 }
