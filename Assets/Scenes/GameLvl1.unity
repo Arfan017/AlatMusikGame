@@ -828,6 +828,14 @@ MonoBehaviour:
     - Ditiup
     - Ditekan
     correctOptionIndex: 1
+  - questionText: Apa nama alat musik ini ?
+    imageQuestion: {fileID: 21300000, guid: 71e99f0cbf8b73146bbd2ebebcdcc03b, type: 3}
+    options:
+    - tifa
+    - fuu
+    - Drum
+    - Piano
+    correctOptionIndex: 1
   - questionText: Apa bahan utama pembuatan alat musik fuu?
     imageQuestion: {fileID: 21300000, guid: 71e99f0cbf8b73146bbd2ebebcdcc03b, type: 3}
     options:
@@ -844,14 +852,6 @@ MonoBehaviour:
     - Digesek
     - Ditekan
     correctOptionIndex: 0
-  - questionText: Apa nama alat musik ini ?
-    imageQuestion: {fileID: 21300000, guid: 71e99f0cbf8b73146bbd2ebebcdcc03b, type: 3}
-    options:
-    - tifa
-    - fuu
-    - Drum
-    - Piano
-    correctOptionIndex: 1
   questionText: {fileID: 154987203}
   imageQuestion: {fileID: 1909014426}
   optionButtons:
@@ -875,7 +875,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: caaceb3d3667d264aaf96333374a59dc, type: 3}
+  m_audioClip: {fileID: 8300000, guid: b167abd54fc58914081ff636b685bc79, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1

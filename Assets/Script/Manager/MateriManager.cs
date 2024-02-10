@@ -8,6 +8,7 @@ public class MateriManager : MonoBehaviour
     public Button tombol2;
     public Button buttonRight;
     public Button buttonLeft;
+    public Button buttonIlmu;
     public Image imageAlat;
     public TextMeshProUGUI tittle;
     public GameObject parentContent;
@@ -52,6 +53,7 @@ public class MateriManager : MonoBehaviour
             tittle.text = AlatMusik.nama;
             imageAlat.sprite = AlatMusik.image;
             content.text = AlatMusik.materi;
+            buttonIlmu.onClick.AddListener(() => Application.OpenURL(AlatMusik.sumber));
         }
     }
 

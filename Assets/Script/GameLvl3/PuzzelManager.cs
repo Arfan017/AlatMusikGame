@@ -5,12 +5,17 @@ using UnityEngine.UI;
 using UnityEngine;
 using System;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class PuzzelManager : MonoBehaviour
 {
     public GameObject SelectedPiece;
     public Sprite newPuzzle;
     public AudioSource myAudioSource;
+    public bool timerIsRunning = false;
+    public TextMeshProUGUI TextTime;
+    [SerializeField] private float timeInSeconds;
+    private float currentTime;
     private int RemeaningPlace = 16;
     int OIL = 1;
 
@@ -32,11 +37,21 @@ public class PuzzelManager : MonoBehaviour
 
     private void Start()
     {
+        Time.timeScale = 1;
         myAudioSource.volume = PlayerPrefs.GetFloat("musicVolume");
+        currentTime = timeInSeconds;
+        timerIsRunning = true;
     }
 
     void Update()
     {
+
+        if (timerIsRunning)
+        {
+            currentTime -= Time.deltaTime;
+            SetTime(currentTime);
+        }
+
         if (Input.GetMouseButtonDown(0))
         {
             RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
@@ -70,7 +85,7 @@ public class PuzzelManager : MonoBehaviour
         }
     }
 
-    public GameObject StartPanel, PanelMenang, PanelSelesai;
+    public GameObject StartPanel, PanelMenang, PanelKalah, PanelSelesai;
     public void SetPuzzlePhoto(Sprite Photo)
     {
         // string nextPuzzleName = PlayerPrefs.GetString("NextPuzzlePhoto", "");
@@ -124,6 +139,7 @@ public class PuzzelManager : MonoBehaviour
     {
         if (SceneManager.GetActiveScene().name == "GameLvl3 1")
         {
+            Time.timeScale = 0;
             PanelMenang.SetActive(true);
         }
         else
@@ -132,8 +148,30 @@ public class PuzzelManager : MonoBehaviour
         }
     }
 
+    public void ShowPanelLose()
+    {
+        PanelKalah.SetActive(true);
+    }
+
     public void ExitGame(int sceneIndex)
     {
         SceneManager.LoadSceneAsync(sceneIndex);
+    }
+
+    public void ReplayGame()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    void SetTime(float value)
+    {
+        TimeSpan time = TimeSpan.FromSeconds(currentTime);                       //set the time value
+        TextTime.text = time.ToString("mm':'ss");   //convert time to Time format
+
+        if (currentTime <= 0)
+        {
+            Time.timeScale = 0;
+            ShowPanelLose();
+        }
     }
 }

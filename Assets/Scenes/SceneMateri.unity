@@ -156,6 +156,7 @@ RectTransform:
   - {fileID: 1332897701}
   - {fileID: 990928171}
   - {fileID: 1799664119}
+  - {fileID: 311865470}
   - {fileID: 959961199}
   - {fileID: 688940071}
   - {fileID: 1554938074}
@@ -333,8 +334,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Tifa
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 97c0f2e6db4badd4f81f639509a3e0ea, type: 2}
+  m_sharedMaterial: {fileID: 8113395860735598444, guid: 97c0f2e6db4badd4f81f639509a3e0ea, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -358,8 +359,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25
-  m_fontSizeBase: 25
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1136,7 +1137,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 2b0bf91d165e8d54ab24ed1b34addf17, type: 3}
+  m_audioClip: {fileID: 8300000, guid: b8567102c92ae294097c096c0eb19eec, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -1348,8 +1349,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 2
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 97c0f2e6db4badd4f81f639509a3e0ea, type: 2}
+  m_sharedMaterial: {fileID: 8113395860735598444, guid: 97c0f2e6db4badd4f81f639509a3e0ea, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1373,8 +1374,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25
-  m_fontSizeBase: 25
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1422,6 +1423,127 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 304938693}
+  m_CullTransparentMesh: 1
+--- !u!1 &311865469
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 311865470}
+  - component: {fileID: 311865473}
+  - component: {fileID: 311865472}
+  - component: {fileID: 311865471}
+  m_Layer: 5
+  m_Name: sumber
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &311865470
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 311865469}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 19909742}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -70, y: 70}
+  m_SizeDelta: {x: 70, y: 70}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &311865471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 311865469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 311865472}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &311865472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 311865469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: ae3c920c36d27ea41a41fa690727ed2f, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &311865473
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 311865469}
   m_CullTransparentMesh: 1
 --- !u!1 &394300620
 GameObject:
@@ -1617,8 +1739,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 1
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 97c0f2e6db4badd4f81f639509a3e0ea, type: 2}
+  m_sharedMaterial: {fileID: 8113395860735598444, guid: 97c0f2e6db4badd4f81f639509a3e0ea, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1642,8 +1764,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25
-  m_fontSizeBase: 25
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1751,6 +1873,7 @@ MonoBehaviour:
   tombol2: {fileID: 810003577}
   buttonRight: {fileID: 1204930382}
   buttonLeft: {fileID: 854806262}
+  buttonIlmu: {fileID: 311865471}
   imageAlat: {fileID: 959961200}
   tittle: {fileID: 1332897702}
   parentContent: {fileID: 531442401}
@@ -1774,6 +1897,7 @@ MonoBehaviour:
       Alat musik kecapi mulut ini berasal dari wilayah lembah Baliem,
       Papua. Dimana wilayah tersebut dihuni oleh mayoritas suku Dani.'
     image: {fileID: 21300000, guid: 17b274dfc7b08b24e881461a39a86ba9, type: 3}
+    sumber: https://www.romadecade.org/alat-musik-tradisional-papua/#4_Alat_Musik_Tradisional_Kecapi_Mulut
   - nama: Amyen
     materi: "Amyen merupakan alat musik tradisional Papua berupa alat musik tiup
       yang sejenis dengan terompet dan terbuat dari bahan jenis kayu putih. Alat
@@ -1782,6 +1906,7 @@ MonoBehaviour:
       pengiring kesenian tarian dari daerah setempat. Bukan hanya itu, alat musik
       ini juga digunakan sebagai alat komunikasi dalam peperangan.\r"
     image: {fileID: 21300000, guid: 028bbd97859a0f34a8a2bd7e8f764971, type: 3}
+    sumber: https://www.romadecade.org/alat-musik-tradisional-papua/#13_Alat_Musik_Tradisional_Amyen
 --- !u!114 &474972707
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2068,7 +2193,7 @@ RectTransform:
   - {fileID: 1986037909}
   - {fileID: 1323844093}
   m_Father: {fileID: 19909742}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2336,8 +2461,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Guoto
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 97c0f2e6db4badd4f81f639509a3e0ea, type: 2}
+  m_sharedMaterial: {fileID: 8113395860735598444, guid: 97c0f2e6db4badd4f81f639509a3e0ea, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2361,8 +2486,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25
-  m_fontSizeBase: 25
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2471,8 +2596,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Amyen
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 97c0f2e6db4badd4f81f639509a3e0ea, type: 2}
+  m_sharedMaterial: {fileID: 8113395860735598444, guid: 97c0f2e6db4badd4f81f639509a3e0ea, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2496,8 +2621,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25
-  m_fontSizeBase: 25
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2712,7 +2837,7 @@ RectTransform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 19909742}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 2.55, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2924,7 +3049,7 @@ RectTransform:
   m_Children:
   - {fileID: 1361593320}
   m_Father: {fileID: 19909742}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -180}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3336,7 +3461,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 19909742}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3586,8 +3711,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Yi
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 97c0f2e6db4badd4f81f639509a3e0ea, type: 2}
+  m_sharedMaterial: {fileID: 8113395860735598444, guid: 97c0f2e6db4badd4f81f639509a3e0ea, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3611,8 +3736,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25
-  m_fontSizeBase: 25
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3721,8 +3846,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Kecapi Mulut
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 97c0f2e6db4badd4f81f639509a3e0ea, type: 2}
+  m_sharedMaterial: {fileID: 8113395860735598444, guid: 97c0f2e6db4badd4f81f639509a3e0ea, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3746,8 +3871,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25
-  m_fontSizeBase: 25
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3932,7 +4057,7 @@ RectTransform:
   m_Children:
   - {fileID: 1644624697}
   m_Father: {fileID: 19909742}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4778,6 +4903,7 @@ MonoBehaviour:
   tombol2: {fileID: 1722391283}
   buttonRight: {fileID: 1204930382}
   buttonLeft: {fileID: 854806262}
+  buttonIlmu: {fileID: 311865471}
   imageAlat: {fileID: 959961200}
   tittle: {fileID: 1332897702}
   parentContent: {fileID: 531442401}
@@ -4804,6 +4930,7 @@ MonoBehaviour:
       penyambutan tamu-tamu penting dan juga pengiring tari-tarian dan masih banyak
       lagi yang lainnya.'
     image: {fileID: 21300000, guid: d36f3efb478ea0744b2a669eb7e8aecb, type: 3}
+    sumber: https://www.romadecade.org/alat-musik-tradisional-papua/#8_Alat_Musik_Tradisional_Tifa
   - nama: Fuu
     materi: "Fuu merupakan alat musik tradisional Papua yang dibuat dengan menggunakan
       bahan bambu dan juga kayu. Alat musik fuu biasanya digunakan sebagai alat berkomunikasi
@@ -4814,6 +4941,7 @@ MonoBehaviour:
       dan juga mempunyai lubang di ujung alat musik ini. Dimana alat musik ini dimainkan
       dengan cara sama seperti memainkan alat musik tifa atau kelambut.\r"
     image: {fileID: 21300000, guid: 71e99f0cbf8b73146bbd2ebebcdcc03b, type: 3}
+    sumber: https://www.romadecade.org/alat-musik-tradisional-papua/#7_Alat_Musik_Tradisional_Fuu
 --- !u!1 &1361593319
 GameObject:
   m_ObjectHideFlags: 0
@@ -5009,8 +5137,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 3
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 97c0f2e6db4badd4f81f639509a3e0ea, type: 2}
+  m_sharedMaterial: {fileID: 8113395860735598444, guid: 97c0f2e6db4badd4f81f639509a3e0ea, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5034,8 +5162,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25
-  m_fontSizeBase: 25
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -5278,6 +5406,7 @@ MonoBehaviour:
   tombol2: {fileID: 1490853210}
   buttonRight: {fileID: 1204930382}
   buttonLeft: {fileID: 854806262}
+  buttonIlmu: {fileID: 311865471}
   imageAlat: {fileID: 959961200}
   tittle: {fileID: 1332897702}
   parentContent: {fileID: 531442401}
@@ -5303,6 +5432,7 @@ MonoBehaviour:
       digunakan oleh para ketua adat pada saat akan diadakan upacara adat atau pada
       saat akan menyampaikan pengumuman kepada masyarakat sekitar.'
     image: {fileID: 21300000, guid: 61b1c4ad403b48e4a8afb3635ae9aff7, type: 3}
+    sumber: https://www.romadecade.org/alat-musik-tradisional-papua/#3_Alat_Musik_Tradisional_Yi
   - nama: Guoto
     materi: "Guoto merupakan alat musik yang sangat sederhana dan modern ini keberadaannya
       sulit untuk ditemui. Guoto terbuat dari bilah bambu yang telah dikeringkan.
@@ -5312,6 +5442,7 @@ MonoBehaviour:
       Papua Barat lainnya untuk menyambut tamu, mengiringin tari, dan juga ritual
       adat setempat.\r"
     image: {fileID: 21300000, guid: dc8fc7aff94fcab419ff8e0b80dccf5d, type: 3}
+    sumber: https://www.romadecade.org/alat-musik-tradisional-papua/#6_Alat_Musik_Tradisional_Guoto
 --- !u!114 &1488506963
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5651,7 +5782,7 @@ RectTransform:
   m_Children:
   - {fileID: 1816469731}
   m_Father: {fileID: 19909742}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 2.55, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -6515,8 +6646,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Fuu
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 97c0f2e6db4badd4f81f639509a3e0ea, type: 2}
+  m_sharedMaterial: {fileID: 8113395860735598444, guid: 97c0f2e6db4badd4f81f639509a3e0ea, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -6540,8 +6671,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25
-  m_fontSizeBase: 25
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
