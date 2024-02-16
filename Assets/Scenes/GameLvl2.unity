@@ -613,7 +613,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 296078267}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: b167abd54fc58914081ff636b685bc79, type: 3}
@@ -1425,7 +1425,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 296078269}
         m_TargetAssemblyTypeName: QuizWordManager, Assembly-CSharp
-        m_MethodName: ChangeScene
+        m_MethodName: ExitGame
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1671,8 +1671,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 296078269}
-        m_TargetAssemblyTypeName: QuizManager, Assembly-CSharp
-        m_MethodName: ChangeScene
+        m_TargetAssemblyTypeName: QuizWordManager, Assembly-CSharp
+        m_MethodName: NextGame
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2433,6 +2433,67 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8702f098a62673243865b75d07d27f8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &1268807875
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 750507052911391064, guid: 4c7cbd28e50e53946824b2128334abee, type: 3}
+      propertyPath: m_Name
+      value: AudioManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 750507052911391070, guid: 4c7cbd28e50e53946824b2128334abee, type: 3}
+      propertyPath: Backsound
+      value: 
+      objectReference: {fileID: 8300000, guid: 5ddf60f7210036d45b17489a3d4d59a9, type: 3}
+    - target: {fileID: 750507052911391071, guid: 4c7cbd28e50e53946824b2128334abee, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 750507052911391071, guid: 4c7cbd28e50e53946824b2128334abee, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 750507052911391071, guid: 4c7cbd28e50e53946824b2128334abee, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 750507052911391071, guid: 4c7cbd28e50e53946824b2128334abee, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 750507052911391071, guid: 4c7cbd28e50e53946824b2128334abee, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 750507052911391071, guid: 4c7cbd28e50e53946824b2128334abee, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 750507052911391071, guid: 4c7cbd28e50e53946824b2128334abee, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 750507052911391071, guid: 4c7cbd28e50e53946824b2128334abee, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 750507052911391071, guid: 4c7cbd28e50e53946824b2128334abee, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 750507052911391071, guid: 4c7cbd28e50e53946824b2128334abee, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 750507052911391071, guid: 4c7cbd28e50e53946824b2128334abee, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4c7cbd28e50e53946824b2128334abee, type: 3}
 --- !u!1 &1297909649
 GameObject:
   m_ObjectHideFlags: 0
@@ -2981,7 +3042,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 296078269}
         m_TargetAssemblyTypeName: QuizWordManager, Assembly-CSharp
-        m_MethodName: ChangeScene
+        m_MethodName: ExitGame
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3182,8 +3243,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 296078269}
-        m_TargetAssemblyTypeName: QuizManager, Assembly-CSharp
-        m_MethodName: ChangeScene
+        m_TargetAssemblyTypeName: QuizWordManager, Assembly-CSharp
+        m_MethodName: ExitGame
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

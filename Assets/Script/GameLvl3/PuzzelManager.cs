@@ -34,6 +34,12 @@ public class PuzzelManager : MonoBehaviour
             }
         }
     }
+    AudioManager audioManager;
+
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("audio").GetComponent<AudioManager>();
+    }
 
     private void Start()
     {
@@ -153,9 +159,15 @@ public class PuzzelManager : MonoBehaviour
         PanelKalah.SetActive(true);
     }
 
+    public void NextGame(int sceneIndex)
+    {
+        SceneManager.LoadSceneAsync(sceneIndex);
+    }
+
     public void ExitGame(int sceneIndex)
     {
         SceneManager.LoadSceneAsync(sceneIndex);
+        Destroy(audioManager.gameObject);
     }
 
     public void ReplayGame()

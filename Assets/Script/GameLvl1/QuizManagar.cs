@@ -28,6 +28,13 @@ public class QuizManagar : MonoBehaviour
     private bool isAnswered;
     private bool QuizFinish;
     // private int TrueAnswer;
+    AudioManager audioManager;
+
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("audio").GetComponent<AudioManager>();
+    }
+
     public int Health
     {
         get
@@ -190,6 +197,13 @@ public class QuizManagar : MonoBehaviour
     {
         Time.timeScale = 1;
         SceneManager.LoadSceneAsync(sceneIndex);
+        Destroy(audioManager.gameObject);
+    }
+
+    public void NextGame(int sceneIndex)
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadSceneAsync(sceneIndex);
     }
 
     private int boolToInt(bool val)
@@ -199,7 +213,7 @@ public class QuizManagar : MonoBehaviour
         else
             return 0;
     }
-    
+
     // public void StopAudio()
     // {
     //     audioBossFight.Stop();

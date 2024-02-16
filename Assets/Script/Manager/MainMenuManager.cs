@@ -11,9 +11,10 @@ public class MainMenuManager : MonoBehaviour
     public GameObject panelUtama;
     public GameObject panelMainmenu;
     public GameObject panelAbout;
-    public AudioSource myAudio;
+    // public AudioSource myAudio;
     public Slider mySlider;
     private float musicVolume = 1f;
+    public VolumeSetting volumeSetting;
 
     private void Awake()
     {
@@ -26,34 +27,25 @@ public class MainMenuManager : MonoBehaviour
 
         if (PlayerPrefs.HasKey("musicVolume"))
         {
-            LoadVolume();
+            // LoadVolume();
+            volumeSetting.LoadVolume();
         }
         else
         {
-            // musicVolume = 1f;
-            updateVolume(musicVolume);
+            volumeSetting.setMusicVolume();
+            // updateVolume(musicVolume);
         }
 
-        // myAudio.volume = 
-        int statusPanelUtama = PlayerPrefs.GetInt("PanelUtamaTerbuka", 1); // 1 adalah nilai default jika kunci tidak ditemukan
+        int statusPanelUtama = PlayerPrefs.GetInt("PanelUtamaTerbuka", 1);
         if (statusPanelUtama == 1)
         {
-            // Panel utama terbuka
-            // Tambahkan kode untuk membuka panel utama di sini
             panelUtama.SetActive(true);
         }
         else
         {
             panelUtama.SetActive(false);
             panelMainmenu.SetActive(true);
-            // Panel utama tertutup
-            // Tambahkan kode untuk menjaga panel utama tertutup di sini
         }
-    }
-
-    void Update()
-    {
-        myAudio.volume = musicVolume;
     }
 
     public void ChangeScene(int sceneIndex)
@@ -64,8 +56,8 @@ public class MainMenuManager : MonoBehaviour
     public void DisablePanel()
     {
         panelUtama.SetActive(false);
-        PlayerPrefs.SetInt("PanelUtamaTerbuka", 0); // 0 untuk menandakan bahwa panel utama tertutup
-        PlayerPrefs.Save(); // Simpan perubahan
+        PlayerPrefs.SetInt("PanelUtamaTerbuka", 0);
+        PlayerPrefs.Save();
     }
 
     private void OnApplicationQuit()
@@ -78,13 +70,6 @@ public class MainMenuManager : MonoBehaviour
     {
         musicVolume = volume;
         PlayerPrefs.SetFloat("musicVolume", volume);
-    }
-
-    private void LoadVolume()
-    {
-        mySlider.value = PlayerPrefs.GetFloat("musicVolume");
-        // musicVolume = PlayerPrefs.GetFloat("musicVolume");
-        updateVolume(musicVolume);
     }
 
     public void QuitGame()

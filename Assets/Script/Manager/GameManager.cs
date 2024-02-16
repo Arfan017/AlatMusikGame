@@ -12,17 +12,16 @@ public class GameManager : MonoBehaviour
     public AudioSource myAudioSource;
     int TrueAnswer, IsComplete;
     private bool QuizFinish;
+    AudioManager audioManager;
 
-
-    public void ChangeScene(int sceneIndex)
+    private void Awake()
     {
-        SceneManager.LoadScene(sceneIndex);
+        audioManager = GameObject.FindGameObjectWithTag("audio").GetComponent<AudioManager>();
     }
 
     private void Start()
     {
         myAudioSource.volume = PlayerPrefs.GetFloat("musicVolume");
-
         GameLv2.interactable = false;
         GameLv3.interactable = false;
         QuizFinish = intToBool(PlayerPrefs.GetInt("QuizFinish"));
@@ -39,6 +38,17 @@ public class GameManager : MonoBehaviour
             GameLv3.interactable = true;
             lock3.SetActive(false);
         }
+    }
+
+    public void ChangeSceneToGame(int sceneIndex)
+    {
+        SceneManager.LoadScene(sceneIndex);
+        Destroy(audioManager.gameObject);
+    }
+
+    public void ChangeScene(int sceneIndex)
+    {
+        SceneManager.LoadScene(sceneIndex);
     }
 
     private bool intToBool(int val)

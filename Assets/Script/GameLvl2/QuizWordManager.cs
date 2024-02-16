@@ -22,9 +22,11 @@ public class QuizWordManager : MonoBehaviour
     private int currentAnswerIndex = 0, currentQuestionIndex = 0;
     private bool correctAnswer = true;
     private string answerWord;
+    AudioManager audioManager;
 
     private void Awake()
     {
+        audioManager = GameObject.FindGameObjectWithTag("audio").GetComponent<AudioManager>();
         if (instance == null)
             instance = this;
         else
@@ -151,9 +153,15 @@ public class QuizWordManager : MonoBehaviour
         }
     }
 
-    public void ChangeScene(int sceneIndex)
+    public void ExitGame(int sceneIndex)
     {
-        SceneManager.LoadScene(sceneIndex);
+        SceneManager.LoadSceneAsync(sceneIndex);
+        Destroy(audioManager.gameObject);
+    }
+
+    public void NextGame(int sceneIndex)
+    {
+        SceneManager.LoadSceneAsync(sceneIndex);
     }
 
 }

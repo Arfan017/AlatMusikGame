@@ -42,10 +42,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 5233040469910365949}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4190ace4415e7954193107ec7474c8ca, type: 3}
+  m_Script: {fileID: 11500000, guid: f50fe4fad39c3304da8d11482fab92cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myMixer: {fileID: 24100000, guid: e29f8b75cdfe1be48a0ebdb0c6a15e07, type: 2}
+  myMixer: {fileID: 0}
   musicSlider: {fileID: 0}
 --- !u!82 &5233040469910365948
 AudioSource:
