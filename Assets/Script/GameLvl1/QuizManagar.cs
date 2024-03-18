@@ -18,6 +18,7 @@ public class QuizManagar : MonoBehaviour
 
     public List<Question> questions;
     public TextMeshProUGUI questionText;
+    public TextMeshProUGUI NoQuest;
     public Image imageQuestion;
     public List<Button> optionButtons;
     public GameObject health0, health1, health2;
@@ -157,6 +158,7 @@ public class QuizManagar : MonoBehaviour
     public void NextQuestionWithDelay()
     {
         currentQuestionIndex++;
+        NoQuest.text = "1/" + (currentQuestionIndex+1);
         ShowQuestion();
     }
 
